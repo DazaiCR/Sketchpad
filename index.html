@@ -6,21 +6,34 @@
         <title>Sketchpad</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playwrite+IE+Guides&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Playwrite+IE+Guides&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Style+Script&display=swap" rel="stylesheet">
+    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Playwrite+IE+Guides&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Style+Script&display=swap" rel="stylesheet">
+    
     </head>
     <body>
         <div class="container">
-            <div class="title">Etch-A-Sketch</div>
+            <div class="title">Etch-a-Sketch</div>
             <div class="content">
                 <div class="buttons">
                     <button type="button" class="circle"></button>
-                    <button type="button" class="color-mode">Color Mode</button>
-                    <button type="button" class="rain-mode">Rainbow Mode</button>
-                    <button type="button" class="eraser">Eraser</button>
-                    <button type="button" class="clear">Clear</button>
-                    <button type="button" class="grid-lines">Grid Lines</button>
+                    <button type="button" class="toggle color-mode">Color Mode</button>
+                    <button type="button" class="toggle random-mode">Random Mode</button>
+                    <button type="button" class="toggle shadow">Shadow Mode</button>
+                    <button type="button" class="toggle eraser">Eraser</button>
+                    <button type="button" class="toggle clear">Clear</button>
+                    <button type="button" class="toggle grid-lines">Grid Lines</button>
                     <div class="grid-size">
-                        <input type="range" id="grid-size" min="0" max="50" value="8">
-                        <label for="grid-size">Grid Size: 8</label>
+                        <input type="range" id="grid-size" min="0" max="50" value="16">
+                        <label for="grid-size" class="grid-size">16x16</label>
                     </div>
                 </div>
                 <div class="grid"></div>

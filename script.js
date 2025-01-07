@@ -1,5 +1,5 @@
 const myDivs = [];
-let numOfCols = 8;
+let numOfCols = 16;
 
 function createDiv() {
     const gridDiv = document.createElement("div");
