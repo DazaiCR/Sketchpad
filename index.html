@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sketchpad</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Etch-A-Sketch</div>
+            <div class="content">
+                <div class="buttons">
+                    <button type="button" class="circle"></button>
+                    <button type="button" class="color-mode">Color Mode</button>
+                    <button type="button" class="rain-mode">Rainbow Mode</button>
+                    <button type="button" class="eraser">Eraser</button>
+                    <button type="button" class="clear">Clear</button>
+                    <button type="button" class="grid-lines">Grid Lines</button>
+                    <div class="grid-size">
+                        <input type="range" id="grid-size" min="0" max="50" value="8">
+                        <label for="grid-size">Grid Size: 8</label>
+                    </div>
+                </div>
+                <div class="grid"></div>
+            </div>
+        </div>
+    </body>
+</html>
