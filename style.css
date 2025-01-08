@@ -91,7 +91,8 @@ button {
 }
 
 .circle {
-    border-color: white;
+    cursor: pointer;
+    border: none;
     border-radius: 3px;
     box-shadow: 0 0 8px white;
     align-self: center;
@@ -99,7 +100,14 @@ button {
     height: 75px;
     padding: initial;
     border-radius: 100%;
-    background-color: white;
+}
+
+.circle::-webkit-color-swatch-wrapper {
+    padding: 0;               /* Remove inner padding */
+}
+
+.circle::-webkit-color-swatch {
+    border: none;             /* Remove swatch border */
 }
 
 .grid-size {
@@ -111,7 +119,7 @@ button {
     margin-right: auto;
 }
 
-input{
+#grid-size {
     accent-color: rgb(64, 181, 173);
     width: 100%;
 }
