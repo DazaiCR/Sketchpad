@@ -110,7 +110,7 @@ button {
     border: none;             /* Remove swatch border */
 }
 
-.grid-size {
+.grid-size-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@ button {
     margin-right: auto;
 }
 
-#grid-size {
+#grid-size-input {
     accent-color: rgb(64, 181, 173);
     width: 100%;
 }
