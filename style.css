@@ -97,7 +97,6 @@ button {
 .circle {
     cursor: pointer;
     border: none;
-    border-radius: 3px;
     box-shadow: 0 0 8px white;
     align-self: center;
     width: 75px;
