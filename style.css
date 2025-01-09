@@ -57,6 +57,10 @@ html, body {
     cursor: grabbing;
 }
 
+.no-borders {
+    border: none;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;

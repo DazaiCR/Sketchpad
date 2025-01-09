@@ -1,8 +1,10 @@
 let gridDivs = [];
 let numOfCols = 16;
 let gridLength = 620;
-let gridSizeInput = document.querySelector("#grid-size-input");
 let squares;
+let gridSizeInput = document.querySelector("#grid-size-input");
+let gridLinesButton = document.querySelector(".grid-lines");
+
 
 function createDiv() {
     const gridDiv = document.createElement("div");
@@ -42,6 +44,10 @@ function setUpGridSizeValue() {
     });
 }
 
+fillGrid();
+setUpColorInputShadowColor();
+setUpGridSizeValue();
+
 gridSizeInput.addEventListener("change", () => {
     let squareLength = gridLength / numOfCols;
     fillGrid();
@@ -52,6 +58,7 @@ gridSizeInput.addEventListener("change", () => {
     });
 })
 
-fillGrid();
-setUpColorInputShadowColor();
-setUpGridSizeValue();
+gridLinesButton.addEventListener("click", () => {
+    squares = document.querySelectorAll(".square");
+    squares.forEach(square => square.classList.toggle("no-borders"));
+});
