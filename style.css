@@ -106,11 +106,11 @@ button {
 }
 
 .circle::-webkit-color-swatch-wrapper {
-    padding: 0;               /* Remove inner padding */
+    padding: 0;
 }
 
 .circle::-webkit-color-swatch {
-    border: none;             /* Remove swatch border */
+    border: none;
 }
 
 .grid-size-container {
@@ -125,4 +125,8 @@ button {
 #grid-size-input {
     accent-color: rgb(64, 181, 173);
     width: 100%;
+}
+
+.exclusive-onclick {
+    color: rgb(64, 181, 173);
 }
